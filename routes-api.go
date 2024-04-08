@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/go-chi/chi/v5"
 	"net/http"
+
+	"github.com/go-chi/chi/v5"
 )
 
 func (a *application) ApiRoutes() http.Handler {
@@ -10,7 +11,7 @@ func (a *application) ApiRoutes() http.Handler {
 
 	r.Route("/api", func(mux chi.Router) {
 		// add any api routes here
-		r.Get("/test-api", func(w http.ResponseWriter, r *http.Request) {
+		r.Get("/health-check", func(w http.ResponseWriter, r *http.Request) {
 			var payload struct {
 				Content string `json:"content"`
 			}
