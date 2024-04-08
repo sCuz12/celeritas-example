@@ -6,7 +6,8 @@ require (
 	github.com/CloudyKit/jet/v6 v6.1.0
 	github.com/alexedwards/scs/v2 v2.4.0
 	github.com/go-chi/chi/v5 v5.0.7
-	github.com/tsawler/celeritas v0.0.0
+	github.com/sCuz12/celeritas v0.0.0
+	github.com/tsawler/celeritas v0.0.0-20220111160753-560e89bc68a4
 	github.com/upper/db/v4 v4.2.1
 )
 
@@ -123,4 +124,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/tsawler/celeritas v0.0.0 => ../celeritas
+replace github.com/sCuz12/celeritas v0.0.0 => ../celeritas
